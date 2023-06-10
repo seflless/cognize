@@ -1,37 +1,23 @@
-<div alt style="text-align: center; transform: scale(.5);">
-	<picture>
-		<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tldraw/tldraw/main/assets/github-hero-dark-draw.png" />
-		<img alt="tldraw" src="https://raw.githubusercontent.com/tldraw/tldraw/main/assets/github-hero-light-draw.png" />
-	</picture>
-</div>
+# Cognize
 
-# tldraw
+_Cognize: to perceive, know, or become aware of. (verb)_
 
-Welcome to the public monorepo for [tldraw](https://tldraw.com).
+## What is cognize?
 
-## What is tldraw?
+Cognize is a VS Code extension that allows you to create and version control diagrams.
 
-tldraw is a collaborative digital whiteboard available at [tldraw.com](https://tldraw.com). Its editor, user interface, and other underlying libraries are open source and available in this repository. They are also distributed on npm. You can use tldraw to create a drop-in whiteboard for your product or as the foundation on which to build your own infinite canvas applications.
+It is a general diagramming tool, but with a focus on working with a local codebase.
 
-Learn more at [tldraw.dev](https://tldraw.dev).
+## Installing
 
-> **Note** This repo contains source code for the **current version** of tldraw. You can find the source for the original version [here](https://github.com/tldraw/tldraw-v1).
+To install the VS Code:
 
-## Installation & Usage
-
-To learn more about using tldraw in your React application, follow our guide [here](https://tldraw.dev/docs/ucg/installation) or see [this StackBlitz](https://stackblitz.com/github/tldraw/tldraw/tree/examples?file=src%2F1-basic%2FBasicExample.tsx).
-
-```tsx
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/editor.css'
-import '@tldraw/tldraw/ui.css'
-
-function TldrawExample() {
-	return <Tldraw />
-}
-```
+1.  Install from the Marketplace (**TODO** Publish it and link to it here)
+1.  Or go to extensions in VS Code and search for "Cognize"
 
 ## Local development
+
+If you want to run it from source...
 
 To run the local development server, first clone this repo.
 
@@ -49,16 +35,10 @@ yarn dev
 
 Open the example project at `localhost:5420`.
 
-### Examples
-
-Our development server contains several examples that demonstrates different ways that you can customize tldraw or use its APIs. Each example is found in the [**apps/examples/src**](https://github.com/tldraw/tldraw/tree/main/apps/examples/src) folder.
-
-- eg: `localhost:5420` for the basic example.
-- eg: `localhost:5420/api` for the API example.
-
-To learn more about using tldraw, [visit our docs](https://tldraw.dev).
-
 ## About this repository
+
+It's based on the awesome [Tldraw](https://github.com/tldraw/tldraw) project. All documentation below is about packages
+and such that we will not try to change, so it's easier to update from the upstream tldraw repo.
 
 ### Top-level layout
 

@@ -1,24 +1,27 @@
 {
-	"name": "tldraw-vscode",
-	"description": "The tldraw extension for VS Code.",
+	"name": "cognize-vscode",
+	"description": "The cognize extension for VS Code.",
 	"version": "2.0.8",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
 	"author": {
-		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"name": "Francois Laberge",
+		"email": "francoislaberge@gmail.com"
 	},
-	"homepage": "https://tldraw.dev",
+	"homepage": "https://github.com/seflless/cognize",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/seflless/cognize"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/seflless/cognize/issues"
 	},
 	"keywords": [
-		"tldraw",
+		"documentation",
+		"code",
+		"understanding",
+		"diagrams",
 		"drawing",
 		"app",
 		"development",
@@ -26,7 +29,7 @@
 		"canvas",
 		"infinite"
 	],
-	"displayName": "tldraw",
+	"displayName": "Cognize",
 	"publisher": "tldraw-org",
 	"icon": "icon.png",
 	"galleryBanner": {
@@ -48,14 +51,14 @@
 	"contributes": {
 		"customEditors": [
 			{
-				"viewType": "tldraw.tldr",
-				"displayName": "tldraw",
+				"viewType": "cognize.cog",
+				"displayName": "Cognize",
 				"selector": [
 					{
-						"filenamePattern": "*.tldr"
+						"filenamePattern": "*.cog"
 					},
 					{
-						"filenamePattern": "*.tldr.json"
+						"filenamePattern": "*.cog.json"
 					}
 				]
 			}
@@ -65,56 +68,56 @@
 				"key": "ctrl+shift+d",
 				"mac": "cmd+shift+d",
 				"title": "Toggle Dark Mode",
-				"command": "tldraw.tldr.toggleDarkMode",
-				"category": "tldraw",
-				"when": "resourceExtname == .tldr"
+				"command": "cognize.cog.toggleDarkMode",
+				"category": "cognize",
+				"when": "resourceExtname == .cog"
 			},
 			{
 				"key": "ctrl+numpad_add",
 				"mac": "cmd+numpad_add",
 				"title": "Zoom In",
-				"command": "tldraw.tldr.zoomIn",
-				"category": "tldraw",
-				"when": "resourceExtname == .tldr"
+				"command": "cognize.cog.zoomIn",
+				"category": "cognize",
+				"when": "resourceExtname == .cog"
 			},
 			{
 				"key": "ctrl+=",
 				"mac": "cmd+=",
 				"title": "Zoom In",
-				"command": "tldraw.tldr.zoomIn",
-				"category": "tldraw",
-				"when": "resourceExtname == .tldr"
+				"command": "cognize.cog.zoomIn",
+				"category": "cognize",
+				"when": "resourceExtname == .cog"
 			},
 			{
 				"key": "ctrl+numpad_subtract",
 				"mac": "cmd+numpad_subtract",
 				"title": "Zoom Out",
-				"command": "tldraw.tldr.zoomOut",
-				"category": "tldraw",
-				"when": "resourceExtname == .tldr"
+				"command": "cognize.cog.zoomOut",
+				"category": "cognize",
+				"when": "resourceExtname == .cog"
 			},
 			{
 				"key": "ctrl+-",
 				"mac": "cmd+-",
 				"title": "Zoom Out",
-				"command": "tldraw.tldr.zoomOut",
-				"category": "tldraw",
-				"when": "resourceExtname == .tldr"
+				"command": "cognize.cog.zoomOut",
+				"category": "cognize",
+				"when": "resourceExtname == .cog"
 			},
 			{
 				"key": "ctrl+numpad0",
 				"mac": "cmd+numpad0",
 				"title": "Reset Zoom",
-				"command": "tldraw.tldr.resetZoom",
-				"category": "tldraw",
-				"when": "resourceExtname == .tldr"
+				"command": "cognize.cog.resetZoom",
+				"category": "cognize",
+				"when": "resourceExtname == .cog"
 			}
 		],
 		"commands": [
 			{
-				"command": "tldraw.tldr.new",
-				"title": "New Project",
-				"category": "tldraw"
+				"command": "cognize.cog.new",
+				"title": "New Cognize file",
+				"category": "cognize"
 			}
 		]
 	},

@@ -7236,6 +7236,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cognize-vscode@workspace:apps/vscode/extension":
+  version: 0.0.0-use.local
+  resolution: "cognize-vscode@workspace:apps/vscode/extension"
+  dependencies:
+    "@tldraw/editor": "workspace:*"
+    "@tldraw/file-format": "workspace:*"
+    "@tldraw/store": "workspace:*"
+    "@types/fs-extra": ^11.0.1
+    "@types/node-fetch": ^2.6.2
+    "@types/vscode": ^1.75.1
+    "@typescript-eslint/eslint-plugin": ^5.10.2
+    "@typescript-eslint/parser": ^5.10.2
+    assert: ^2.0.0
+    esbuild: ^0.16.7
+    fs-extra: ^11.1.0
+    lazyrepo: 0.0.0-alpha.27
+    lodash: ^4.17.21
+    mocha: ^9.1.1
+    nanoid: 4.0.2
+    node-fetch: ^2.0.0
+    process: ^0.11.10
+    ts-loader: ^9.2.5
+    tslib: ^2.4.0
+    tsx: ^3.12.6
+    vsce: ^2.15.0
+  languageName: unknown
+  linkType: soft
+
 "collect-v8-coverage@npm:^1.0.0":
   version: 1.0.1
   resolution: "collect-v8-coverage@npm:1.0.1"
@@ -17678,34 +17706,6 @@ __metadata:
   checksum: 6df4d07fceeedc0a878d7bac47e2cd47c1ceeb1078340a9eb8a295bc0651e17c750f73d47b3028d829f30b85c15e0572c0fd4142083e4c21a30a597e47f47230
   languageName: node
   linkType: hard
-
-"tldraw-vscode@workspace:apps/vscode/extension":
-  version: 0.0.0-use.local
-  resolution: "tldraw-vscode@workspace:apps/vscode/extension"
-  dependencies:
-    "@tldraw/editor": "workspace:*"
-    "@tldraw/file-format": "workspace:*"
-    "@tldraw/store": "workspace:*"
-    "@types/fs-extra": ^11.0.1
-    "@types/node-fetch": ^2.6.2
-    "@types/vscode": ^1.75.1
-    "@typescript-eslint/eslint-plugin": ^5.10.2
-    "@typescript-eslint/parser": ^5.10.2
-    assert: ^2.0.0
-    esbuild: ^0.16.7
-    fs-extra: ^11.1.0
-    lazyrepo: 0.0.0-alpha.27
-    lodash: ^4.17.21
-    mocha: ^9.1.1
-    nanoid: 4.0.2
-    node-fetch: ^2.0.0
-    process: ^0.11.10
-    ts-loader: ^9.2.5
-    tslib: ^2.4.0
-    tsx: ^3.12.6
-    vsce: ^2.15.0
-  languageName: unknown
-  linkType: soft
 
 "tmp@npm:^0.0.33":
   version: 0.0.33

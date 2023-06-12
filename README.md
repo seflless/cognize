@@ -8,9 +8,7 @@ Cognize is a VS Code extension that allows you to create and version control dia
 
 It is a general diagramming tool, but with a focus on working with a local codebase.
 
-## Installing
-
-To install the VS Code:
+## Installing The VS Code Extension
 
 1.  Install from the Marketplace (**TODO** Publish it and link to it here)
 1.  Or go to extensions in VS Code and search for "Cognize"
@@ -34,6 +32,10 @@ yarn dev
 ```
 
 Open the example project at `localhost:5420`.
+
+## Publishing:
+
+[Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
 
 ## About this repository
 

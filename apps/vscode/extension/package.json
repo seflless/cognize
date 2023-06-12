@@ -1,7 +1,7 @@
 {
 	"name": "cognize-vscode",
 	"description": "The cognize extension for VS Code.",
-	"version": "2.0.8",
+	"version": "2.0.9",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
 	"author": {
@@ -30,7 +30,7 @@
 		"infinite"
 	],
 	"displayName": "Cognize",
-	"publisher": "tldraw-org",
+	"publisher": "Cognize",
 	"icon": "icon.png",
 	"galleryBanner": {
 		"color": "#1d1d1d",

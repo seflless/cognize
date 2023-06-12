@@ -41,6 +41,8 @@ export class TLDrawDocument implements vscode.CustomDocument {
 		public documentData: TldrawFile,
 		backupId: string | undefined
 	) {
+		// eslint-disable-next-line no-console
+		console.log('Hi from TLDrawDocument constructor')
 		this.isBlankDocument = backupId === 'undefined'
 	}
 
@@ -158,18 +160,18 @@ export class TLDrawDocument implements vscode.CustomDocument {
 	}
 
 	async v1Backup(backupSaved: string, backupFailed: string) {
-		const regex = /\.tldr$/gi
+		const regex = /\.cog$/gi
 		if (!regex.test(this.uri.path)) {
 			vscode.window.showInformationMessage(backupFailed)
 			return
 		}
 
-		let destination = this.uri.with({ path: this.uri.path.replace(/\.tldr$/gi, ' - old.tldr') })
+		let destination = this.uri.with({ path: this.uri.path.replace(/\.cog$/gi, ' - old.cog') })
 		let exists = await fileExists(destination)
 		let fileNumber = 1
 		while (exists) {
 			destination = this.uri.with({
-				path: this.uri.path.replace(/\.tldr$/gi, ` - old (${fileNumber}).tldr`),
+				path: this.uri.path.replace(/\.cog$/gi, ` - old (${fileNumber}).cog`),
 			})
 			exists = await fileExists(destination)
 			fileNumber++

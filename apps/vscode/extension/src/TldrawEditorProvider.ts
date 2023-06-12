@@ -9,7 +9,7 @@ import type { VscodeMessage } from '../../messages'
 export class TldrawEditorProvider implements vscode.CustomEditorProvider<TLDrawDocument> {
 	private static newTDFileId = 1
 	private disposables: vscode.Disposable[] = []
-	private static readonly viewType = 'tldraw.tldr'
+	private static readonly viewType = 'cognize.cog'
 	private webviewPanels: vscode.WebviewPanel[] = []
 
 	private readonly _onDidChangeCustomDocument = new vscode.EventEmitter<
@@ -23,15 +23,15 @@ export class TldrawEditorProvider implements vscode.CustomEditorProvider<TLDrawD
 		// Several commands exist only to prevent the default keyboard shortcuts
 		const noopCmds = ['zoomIn', 'zoomOut', 'resetZoom', 'toggleDarkMode']
 		noopCmds.forEach((name) =>
-			context.subscriptions.push(vscode.commands.registerCommand(`tldraw.tldr.${name}`, () => null))
+			context.subscriptions.push(vscode.commands.registerCommand(`cognize.cog.${name}`, () => null))
 		)
 
 		// Register the 'Create New File' command, which creates a temporary
-		// .tldr file and opens it in the editor.
+		// .cog file and opens it in the editor.
 		context.subscriptions.push(
-			vscode.commands.registerCommand(`tldraw.tldr.new`, () => {
+			vscode.commands.registerCommand(`cognize.cog.new`, () => {
 				const id = this.newTDFileId++
-				const name = id > 1 ? `New Document ${id}.tldr` : `New Document.tldr`
+				const name = id > 1 ? `New Document ${id}.cog` : `New Document.cog`
 
 				const workspaceFolders = vscode.workspace.workspaceFolders
 				const path = workspaceFolders ? workspaceFolders[0].uri : vscode.Uri.parse('')
@@ -45,7 +45,7 @@ export class TldrawEditorProvider implements vscode.CustomEditorProvider<TLDrawD
 		)
 
 		// Register our editor provider, indicating to VS Code that we can
-		// handle files with the .tldr extension.
+		// handle files with the .cog extension.
 		return vscode.window.registerCustomEditorProvider(
 			this.viewType,
 			new TldrawEditorProvider(context),

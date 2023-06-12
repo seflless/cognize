@@ -348,7 +348,7 @@ export const DEFAULT_TRANSLATION = {
 	'toast.error.copy-fail.desc': 'Failed to copy image',
 	'context.pages.new-page': 'New page',
 	'vscode.file-open.desc':
-		"We've updated this document to work with the current version of tldraw. If you'd like to keep the original version (which will work on old.tldraw.com), click below to create a backup.",
+		"We've updated this document to work with the current version of Cognize.",
 	'vscode.file-open.open': 'Continue',
 	'vscode.file-open.backup': 'Backup',
 	'vscode.file-open.backup-saved': 'Backup saved',

@@ -7,8 +7,6 @@ import { nicelog } from './utils'
 export function activate(context: vscode.ExtensionContext) {
 	try {
 		if (process.env.NODE_ENV !== 'production') {
-			// eslint-disable-next-line no-console
-			console.log('Hi from extension!')
 			const extensionWatcher = watch(
 				__dirname + '/extension.js',
 				{ persistent: false },

@@ -7,6 +7,3 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 		<WrappedTldrawEditor />
 	</React.StrictMode>
 )
-
-// eslint-disable-next-line no-console
-console.log('Hi from editor process!')
